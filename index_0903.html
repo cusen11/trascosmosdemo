@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Now Amazing Webpage</title>
+		<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/> -->
+		<link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css"/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<style>
+			.animated  {
+				animation: fadeOut 2s infinite;
+				animation-delay: 1s;
+				}  
+				/* .owl-animated-out - only for current item */ 
+				/* This is very important class. Use z-index if you want move Out item above In item */ 
+				.owl-animated-out {
+				z-index : 1 
+				}
+				/* .owl-animated-in - only for upcoming item
+				/* This is very important class. Use z-index if you want move In item above Out item */ 
+				.owl-animated-in {
+				z-index : 0 
+				}
+				/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
+				 
+				@-webkit-keyframes  fadeOut  {
+					0% {
+						margin-left:2px ;
+					}  
+					20% {
+						margin-left:4px ;
+					}
+					40% {
+						margin-left:6px ;
+					}  
+					60% {
+						margin-left:4px ;
+					}  
+					80% {
+						margin-left:2px ;
+					}
+					100% {
+						margin-left:0 ;
+					}  
+				}
+				@keyframes  fadeOut  {
+					0% {
+						margin-left:2px ;
+					}  
+					20% {
+						margin-left:4px ;
+					}
+					40% {
+						margin-left:6px ;
+					}  
+					60% {
+						margin-left:4px ;
+					}  
+					80% {
+						margin-left:2px ;
+					}
+					100% {
+						margin-left:0 ;
+					}  
+				}
+		</style>
+		</head>
+		<body>
+	  
+			<div class="owl1 owl-carousel owl-theme">
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div>
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+			</div>
+			<div class="owl2 owl-carousel owl-theme">
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+			</div>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<!-- <script type="text/javascript" src="./js/slick.min.js"></script> -->
+		<script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+	  
+		<!-- <script type="text/javascript">
+		  $(document).ready(function(){
+			$('.your-class').slick({
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 0,
+				speed: 8000,
+				pauseOnHover: false, 
+				rtl: true, 
+				initialSlide: -10,
+				infinite:true
+			});
+		  });
+		</script> -->
+		<script>
+			$('.owl1').owlCarousel({
+				rtl:true,
+				center: true,
+				items:3,
+				loop:true,
+				margin:5,
+				nav:false,
+				dots:false,
+				autoplay: true,
+				slideTransition: 'linear',
+				autoplayTimeout: 3000,
+				autoplaySpeed: 3000, 
+				animateOut: 'slideOutDown',
+    			animateIn: 'flipInX',
+				responsive:{
+					0:{
+						items:1
+					},
+					600:{
+						items:3
+					},
+					1000:{
+						items:5
+					}
+				} 
+			})
+
+			$('.owl2').owlCarousel({ 
+				center: true,
+				items:3,
+				loop:true,
+				margin:2,
+				nav:false,
+				dots:false,
+				autoplay: true,
+				slideTransition: 'linear',
+				autoplayTimeout: 3000,
+				autoplaySpeed: 3000, 
+				responsive:{
+					0:{
+						items:1
+					},
+					600:{
+						items:3
+					},
+					1000:{
+						items:5
+					}
+				}
+			})
+		</script>
+	  
+		</body>
+</html>
