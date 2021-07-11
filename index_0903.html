@@ -9,98 +9,188 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
+		<link rel="stylesheet" href="./css/animation.css">
 		<style>
-			.animated  {
-				animation: fadeOut 2s infinite;
-				animation-delay: 1s;
-				}  
-				/* .owl-animated-out - only for current item */ 
-				/* This is very important class. Use z-index if you want move Out item above In item */ 
-				.owl-animated-out {
-				z-index : 1 
+			.div1{
+				height: 200px;
+				overflow-y: hidden;
+			} 
+
+			#red-triangle {
+				animation: red-triangle-anim 9.6s infinite;
+				background-color: brown;  
+			}
+			@keyframes red-triangle-anim {
+				50% {
+				animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+				transform: rotate(-10deg);
 				}
-				/* .owl-animated-in - only for upcoming item
-				/* This is very important class. Use z-index if you want move In item above Out item */ 
-				.owl-animated-in {
-				z-index : 0 
+			}
+
+			#red-triangle1 {
+				animation: red-triangle-anim1 9.6s infinite;
+				background-color: brown;  
+			}
+			@keyframes red-triangle-anim1 {
+				50% {
+				animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+				transform: translateX(-15px);
 				}
-				/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
-				 
-				@-webkit-keyframes  fadeOut  {
-					0% {
-						margin-left:2px ;
-					}  
-					20% {
-						margin-left:4px ;
-					}
-					40% {
-						margin-left:6px ;
-					}  
-					60% {
-						margin-left:4px ;
-					}  
-					80% {
-						margin-left:2px ;
-					}
-					100% {
-						margin-left:0 ;
-					}  
-				}
-				@keyframes  fadeOut  {
-					0% {
-						margin-left:2px ;
-					}  
-					20% {
-						margin-left:4px ;
-					}
-					40% {
-						margin-left:6px ;
-					}  
-					60% {
-						margin-left:4px ;
-					}  
-					80% {
-						margin-left:2px ;
-					}
-					100% {
-						margin-left:0 ;
-					}  
-				}
+			}
 		</style>
 		</head>
 		<body>
 	  
-			<div class="owl1 owl-carousel owl-theme">
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div>
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item animated fadeOut"><img src="./images/49_mv.png" alt=""></div> 
+			<div class="div1">
+				<h2>demo1</h2>
+				<div class="owl1 owl-carousel owl-theme">
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="4s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div>
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="6s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="7s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="8s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="9s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="10s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="11s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="12s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="13s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow pulse" data-wow-duration="2s" data-wow-delay="14s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+				</div>
 			</div>
-			<div class="owl2 owl-carousel owl-theme">
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
-				<div class="item"><img src="./images/49_mv.png" alt=""></div> 
+			<div class="div1"> 
+				<h2>demo2</h2>
+				<div class="owl2 owl-carousel owl-theme">
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="4s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div>
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="6s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="7s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="8s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="9s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="10s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="11s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="12s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="13s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow tada" data-wow-duration="2s" data-wow-delay="14s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+				</div>
+
+			</div>
+
+			<div class="div1"> 
+				<h2>demo3</h2>
+				<div class="owl2 owl-carousel owl-theme">
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div>
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow bounceIn" data-wow-duration="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+				</div>
+
+			</div>
+
+			<div class="div1"> 
+				<h2>demo4</h2>
+				<div class="owl2 owl-carousel owl-theme">
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="4s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div>
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="0s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="7s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="0s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow zoomIn" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+				</div>
+
+			</div>
+
+			<div class="div1"> 
+				<h2>demo5</h2>
+				<div class="owl2 owl-carousel owl-theme">
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="4s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div>
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="4" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="4s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="5s" data-wow-iteration="100"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+				</div>
+
+			</div>
+
+			<div class="div1"> 
+				<h2>demo6</h2>
+				<div class="owl2 owl-carousel owl-theme">
+					<div class="item" style="animation-delay:0s" id="red-triangle"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:1s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:2s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:3s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:4s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div>
+					<div class="item" style="animation-delay:5s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:6s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:7s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:8s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:9s" id="red-triangle"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:10s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:0s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:1s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:2s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:3s" id="red-triangle" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+				</div>
+
+			</div>
+
+			<div class="div1"> 
+				<h2>demo6</h2>
+				<div class="owl2 owl-carousel owl-theme">
+					<div class="item" style="animation-delay:0s" id="red-triangle1"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:1s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:2s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:3s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:4s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div>
+					<div class="item" style="animation-delay:5s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:6s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:7s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:8s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:9s" id="red-triangle1"><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:10s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:0s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:1s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:2s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+					<div class="item" style="animation-delay:3s" id="red-triangle1" ><img src="https://image.tmdb.org/t/p/w300//yOQX4JPwX1uhMyVT1jJigAk7iUr.jpg" alt=""></div> 
+				</div>
+
 			</div>
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -145,22 +235,25 @@
 						items:3
 					},
 					1000:{
-						items:5
+						items:10
 					}
 				} 
 			})
 
 			$('.owl2').owlCarousel({ 
+				rtl:true,
 				center: true,
 				items:3,
 				loop:true,
-				margin:2,
+				margin:5,
 				nav:false,
 				dots:false,
 				autoplay: true,
 				slideTransition: 'linear',
 				autoplayTimeout: 3000,
 				autoplaySpeed: 3000, 
+				animateOut: 'slideOutDown',
+    			animateIn: 'flipInX',
 				responsive:{
 					0:{
 						items:1
@@ -169,11 +262,14 @@
 						items:3
 					},
 					1000:{
-						items:5
+						items:10
 					}
-				}
+				} 
 			})
 		</script>
-	  
+	  <script src="./js/wow.js"></script>
+	  <script>
+		  new WOW().init();
+	  </script>
 		</body>
 </html>
